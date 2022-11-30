@@ -40,7 +40,7 @@ export class EmpRegisterComponent {
     if (this.password==this.confirm) {
       alert("registered successfully")
     } else {
-      alert("something went wrong")
+      alert("Password does not matches")
     }
   }
 

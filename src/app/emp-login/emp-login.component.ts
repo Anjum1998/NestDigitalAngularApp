@@ -16,9 +16,9 @@ constructor(private router:Router){}
     let data:any={"empid":this.empid,"password":this.password}
     console.log(data)
     if (this.empid=="1122"&& this.password=="12345") {
-      this.router.navigate(['/gallery'])
+      this.router.navigate(['/addcourse'])
     } else {
-      
+      alert("something went wrong")
     }
   }
 
