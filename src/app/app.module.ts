@@ -10,6 +10,8 @@ import { AddContactusComponent } from './add-contactus/add-contactus.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AddAboutusComponent } from './add-aboutus/add-aboutus.component';
 import { AddGalleryComponent } from './add-gallery/add-gallery.component';
+import { AdminLoginComponent } from './admin-login/admin-login.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const myRoute:Routes=[
   {
@@ -27,6 +29,10 @@ const myRoute:Routes=[
   {
     path:"gallery",
     component:AddGalleryComponent
+  },
+  {
+    path:"admin",
+    component:AdminLoginComponent
   }
 ]
 @NgModule({
@@ -36,13 +42,15 @@ const myRoute:Routes=[
     AddContactusComponent,
     NavbarComponent,
     AddAboutusComponent,
-    AddGalleryComponent
+    AddGalleryComponent,
+    AdminLoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(myRoute),
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
