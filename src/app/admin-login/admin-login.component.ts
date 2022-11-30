@@ -16,9 +16,9 @@ export class AdminLoginComponent {
     let data:any={"username":this.username,"password":this.password}
     console.log(data)
     if (this.username=="admin" && this.password=="nestdigital") {
-      this.router.navigate(['/gallery'])
+      this.router.navigate(['/viewcourse'])
     } else {
-      alert("wrong")
+      alert("wrong credentials")
     }
   }
 
