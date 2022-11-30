@@ -6,17 +6,23 @@ import { AppComponent } from './app.component';
 import { AddHomeComponent } from './add-home/add-home.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { AddContactusComponent } from './add-contactus/add-contactus.component';
 
 const myRoute:Routes=[
   {
     path:"",
     component:AddHomeComponent
+  },
+  {
+    path:"contact",
+    component:AddContactusComponent
   }
 ]
 @NgModule({
   declarations: [
     AppComponent,
-    AddHomeComponent
+    AddHomeComponent,
+    AddContactusComponent
   ],
   imports: [
     BrowserModule,
