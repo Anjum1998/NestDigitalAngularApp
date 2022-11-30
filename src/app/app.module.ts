@@ -17,6 +17,7 @@ import { EmpRegisterComponent } from './emp-register/emp-register.component';
 import { ViewCourseComponent } from './view-course/view-course.component';
 import { ViewFriendsComponent } from './view-friends/view-friends.component';
 import { AddCourseComponent } from './add-course/add-course.component';
+import { AddFriendComponent } from './add-friend/add-friend.component';
 
 const myRoute:Routes=[
   {
@@ -54,7 +55,16 @@ const myRoute:Routes=[
   {
     path:"viewfriends",
     component:ViewFriendsComponent
+  },
+  {
+    path:"addfriend",
+    component:AddFriendComponent
+  },
+  {
+    path:"addcourse",
+    component:AddCourseComponent
   }
+
 ]
 @NgModule({
   declarations: [
@@ -69,7 +79,8 @@ const myRoute:Routes=[
     EmpRegisterComponent,
     ViewCourseComponent,
     ViewFriendsComponent,
-    AddCourseComponent
+    AddCourseComponent,
+    AddFriendComponent
   ],
   imports: [
     BrowserModule,
