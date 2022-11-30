@@ -13,6 +13,7 @@ import { AddGalleryComponent } from './add-gallery/add-gallery.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { EmpLoginComponent } from './emp-login/emp-login.component';
+import { EmpRegisterComponent } from './emp-register/emp-register.component';
 
 const myRoute:Routes=[
   {
@@ -38,6 +39,10 @@ const myRoute:Routes=[
   {
     path:"emp",
     component:EmpLoginComponent
+  },
+  {
+    path:"register",
+    component:EmpRegisterComponent
   }
 ]
 @NgModule({
@@ -49,7 +54,8 @@ const myRoute:Routes=[
     AddAboutusComponent,
     AddGalleryComponent,
     AdminLoginComponent,
-    EmpLoginComponent
+    EmpLoginComponent,
+    EmpRegisterComponent
   ],
   imports: [
     BrowserModule,
