@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { EmpLoginComponent } from './emp-login/emp-login.component';
 import { EmpRegisterComponent } from './emp-register/emp-register.component';
 import { ViewCourseComponent } from './view-course/view-course.component';
+import { ViewFriendsComponent } from './view-friends/view-friends.component';
 
 const myRoute:Routes=[
   {
@@ -48,6 +49,10 @@ const myRoute:Routes=[
   {
     path:"viewcourse",
     component:ViewCourseComponent
+  },
+  {
+    path:"viewfriends",
+    component:ViewFriendsComponent
   }
 ]
 @NgModule({
@@ -61,7 +66,8 @@ const myRoute:Routes=[
     AdminLoginComponent,
     EmpLoginComponent,
     EmpRegisterComponent,
-    ViewCourseComponent
+    ViewCourseComponent,
+    ViewFriendsComponent
   ],
   imports: [
     BrowserModule,
