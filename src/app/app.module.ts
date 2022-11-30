@@ -8,6 +8,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { AddContactusComponent } from './add-contactus/add-contactus.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AddAboutusComponent } from './add-aboutus/add-aboutus.component';
 
 const myRoute:Routes=[
   {
@@ -17,6 +18,10 @@ const myRoute:Routes=[
   {
     path:"contact",
     component:AddContactusComponent
+  },
+  {
+    path:"about",
+    component:AddAboutusComponent
   }
 ]
 @NgModule({
@@ -24,7 +29,8 @@ const myRoute:Routes=[
     AppComponent,
     AddHomeComponent,
     AddContactusComponent,
-    NavbarComponent
+    NavbarComponent,
+    AddAboutusComponent
   ],
   imports: [
     BrowserModule,
