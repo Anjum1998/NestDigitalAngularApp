@@ -7,6 +7,7 @@ import { AddHomeComponent } from './add-home/add-home.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { AddContactusComponent } from './add-contactus/add-contactus.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const myRoute:Routes=[
   {
@@ -22,7 +23,8 @@ const myRoute:Routes=[
   declarations: [
     AppComponent,
     AddHomeComponent,
-    AddContactusComponent
+    AddContactusComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
