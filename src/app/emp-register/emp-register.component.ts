@@ -39,6 +39,25 @@ export class EmpRegisterComponent {
     console.log(data)
     if (this.password==this.confirm) {
       alert("registered successfully")
+      this.empid=""
+      this.fname=""
+      this.confirm=""
+      this.country=""
+      this.district=""
+      this.dob=""
+      this.email=""
+      this.gender=""
+      this.hdegree=""
+      this.hname=""
+      this.hno=""
+      this.lname=""
+      this.mobile=""
+      this.password=""
+      this.pname=""
+      this.sname=""
+      this.state=""
+      this.username=""
+      this.yoe=""
     } else {
       alert("Password does not matches")
     }
